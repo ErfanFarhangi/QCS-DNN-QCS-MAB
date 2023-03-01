@@ -6,7 +6,7 @@ The source code for a QoS-aware 5G-MEC component selection based on the multi-ar
 
 The source code for a QoS-aware 5G-MEC component selection based on the deep learning-based approach, called QCS-DNN, is provided and consists of a series of fully connected layers connecting every neuron in one layer to every neuron in another. Through numerical analysis, we establish a neural network for QCS-DNN consisting of four layers: three hidden layers and one output layer. We choose the ReLU activation function for the hidden layers (since it is faster for finding the optimal result) and the Sigmoid activation function for the output layer. We use the standard cross-entropy as the loss function. The optimal 5G-MEC component selection policies obtained from running IP (per different UEs) are used as labeled samples to train the DNN. Once the training of the DNN is completed, we evaluate its performance on the test samples. We assess the network's performance on the unseen 20% of samples we considered separately for the testing phase. The code is implemented in Python.
 
-How to run the QCS-MAB code?
+How to run the codes?
 
-We used visual studio environment to develop the code. You can downlaod visual stuio from https://visualstudio.microsoft.com/downloads/. To run the code using visual studio, you need to first configure visual studio to use IBM CPLEX Concert. Instruction for configuration is availble at https://www.leandro-coelho.com/how-to-configure-ms-visual-studio-to-use-ibm-cplex-concert/
+We used a visual studio environment to develop the QCS-MAB code. You can download visual studio from https://visualstudio.microsoft.com/downloads/. We used Pycharm Community Edition to develop QCS-DNN code. You can download Pycharm Community Edition from https://www.jetbrains.com/pycharm/download/#section=windows. Please make sure to change the directory for the data to your address accordingly.
 
